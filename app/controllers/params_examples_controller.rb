@@ -25,6 +25,15 @@ class ParamsExamplesController < ApplicationController
     render "number.html.erb"
   end
 
+  def url_segment_params_method
+    @value = params[:wildcard]
+    render "url_segment_params.html.erb"
+
+  end
+
+
+
+
 
 
 
