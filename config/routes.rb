@@ -7,5 +7,15 @@ Rails.application.routes.draw do
   get "/number_game" => "params_examples#number_method"
 
   get "/url_segment_params_url/:wildcard" => "params_examples#url_segment_params_method"
+
+  get "/number_game/:guess" => "params_examples#number_method"
+
+  get "/form_params" => "params_examples#form_params"
+
+  post "/form_result" => "params_examples#form_result"
+
+
+
+
   
 end

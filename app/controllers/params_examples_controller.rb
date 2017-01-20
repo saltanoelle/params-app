@@ -31,7 +31,14 @@ class ParamsExamplesController < ApplicationController
 
   end
 
+  def form_params
+    render "form.html.erb"
+  end
 
+  def form_result
+    @value = params[:form_message]
+    render "form_result.html.erb"
+  end
 
 
 
